@@ -6,14 +6,14 @@
     "declaration": true,
     "jsx": "react",
     "moduleResolution":"Node",
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src"
+    "library"
   ],
   "exclude": [
-    "src/**/*.test.tsx",
-    "src/**/*.stories.tsx",
-    "src/setupTests.ts",
+    "library/**/*.test.tsx",
+    "library/**/*.stories.tsx",
+    "library/setupTests.ts",
   ]
 }

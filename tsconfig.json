@@ -16,11 +16,17 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "experimentalDecorators": true,
     "noEmit": true,
     "jsx": "react",
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "paths": {
+      "library/*": ["./library/*"],
+      "@/*": ["./*"],
+    }
   },
   "include": [
-    "src"
+    "library",
+    "types"
   ]
 }

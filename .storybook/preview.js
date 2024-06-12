@@ -10,7 +10,7 @@ export const parameters = {
   viewMode: 'docs',
   options: {
     storySort: {
-      order: ['Welcome','Icon','Button', 'Menu', 'Form', 'AutoComplete'],
+      order: ['Button'],
     },
   },
 }
