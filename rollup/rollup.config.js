@@ -8,7 +8,7 @@ import postcss from 'rollup-plugin-postcss';
 
 const overrides = {
   compilerOptions: { declaration: true },
-  exclude: ["library/**/*.test.tsx", "library/**/*.stories.tsx", "library/**/*.stories.mdx", "library/setupTests.ts"]
+  exclude: ["stories/**", "library/**/*.test.tsx", "library/**/*.stories.tsx", "library/**/*.stories.mdx", "library/setupTests.ts"]
 };
 
 const config = {
@@ -18,7 +18,7 @@ const config = {
       extensions: ['.js', '.jsx'], // 添加 .ts 和 .tsx 扩展名
     }),
     babel({
-      exclude: 'node_modules/**',
+      exclude: ['node_modules/**'],
       presets: ['@babel/preset-env', '@babel/preset-react'], // 使用 React 预设
       babelHelpers: 'bundled',
       extensions: ['.js', '.jsx'], // 添加 .ts 和 .tsx 扩展名
