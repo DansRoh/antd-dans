@@ -1,12 +1,15 @@
 {
   "name": "antd-d",
-  "version": "1.0.0",
-  "description": "基于antd封装的增强型组件库",
+  "version": "1.0.2",
+  "description": "基于antd封装的配置化组件库",
   "private": false,
   "main": "dist/index.es.js",
   "module": "dist/index.es.js",
   "unpkg": "dist/index.umd.js",
   "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "antd": "^5.16.0"
+  },
   "scripts": {
     "clean": "rimraf ./dist",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,7 +26,9 @@
     "dist/index.css"
   ],
   "keywords": [
-    "antd"
+    "antd",
+    "react",
+    "UI"
   ],
   "author": "dansroh",
   "license": "MIT",
