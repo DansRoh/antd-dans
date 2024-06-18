@@ -27,6 +27,7 @@
   },
   "include": [
     "library",
+    "stories",
     "types"
   ]
 }

@@ -13,7 +13,7 @@
   ],
   "exclude": [
     "library/**/*.test.tsx",
-    "library/**/*.stories.tsx",
+    "stories/*.stories.tsx",
     "library/setupTests.ts",
   ]
 }

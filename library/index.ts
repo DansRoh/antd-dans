@@ -1,1 +1,8 @@
-console.log(111)
+export {
+  FormPro,
+  GridLayout,
+} from './components';
+
+export type {
+  IConfigItem,
+} from './components';

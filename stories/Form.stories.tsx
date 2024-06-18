@@ -1,26 +1,42 @@
 import {Form} from "antd";
 import React from "react";
-import FormPro from "../library/FormPro";
-import {ItemConfig} from "../library/FormPro/types";
+import {FormPro, IConfigItem} from "library/index";
 
 export default {
   title: 'Example/Form',
   component: Form
 }
 
-const Template = ({items}) => {
+const Template = () => {
+  const [form] = Form.useForm()
+  const items:IConfigItem[] = [
+    {
+      name: 'name',
+      label: '姓名'
+    },
+    {
+      name: 'sex',
+      label: '性别',
+      type: 'radio',
+      itemProps: {
+        options: ['男', '女']
+      }
+    },
+    {
+      name: 'age',
+      label: '年龄',
+      type: 'numberInput',
+    }
+  ]
   return (
-    <Form>
-      <FormPro items={items}></FormPro>
+    <Form form={form}>
+      <FormPro
+        gridLayout={{number: 3, gutter: 20}}
+        config={items}
+        form={form}
+      ></FormPro>
     </Form>
   );
 }
 
 export const Base = Template.bind({});
-// @ts-ignore
-Base.args = {
-  items: [
-    { name: 'name', label: '姓名', type: 'input' },
-    { name: 'pwd', label: '密码', type: 'input' },
-  ]
-}

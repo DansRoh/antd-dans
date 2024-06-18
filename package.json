@@ -1,7 +1,12 @@
 {
-  "name": "antd-dans",
+  "name": "antd-d",
   "version": "1.0.0",
   "description": "基于antd封装的增强型组件库",
+  "private": false,
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rimraf ./dist",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,6 +16,12 @@
     "build-es": "rollup --config rollup/rollup.esm.config.js",
     "build-umd": "rollup --config rollup/rollup.umd.config.js"
   },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "dist/index.css"
+  ],
   "keywords": [
     "antd"
   ],
@@ -29,20 +40,20 @@
   "devDependencies": {
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
-    "@chromatic-com/storybook": "^1.2.25",
+    "@chromatic-com/storybook": "^1.5.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.8",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-replace": "^5.0.5",
-    "@storybook/addon-essentials": "^8.0.5",
-    "@storybook/addon-interactions": "^8.0.5",
-    "@storybook/addon-links": "^8.0.5",
-    "@storybook/addon-onboarding": "^8.0.5",
-    "@storybook/blocks": "^8.0.5",
-    "@storybook/react": "^8.0.5",
-    "@storybook/react-vite": "^8.0.5",
-    "@storybook/test": "^8.0.5",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/react-vite": "^8.1.10",
+    "@storybook/test": "^8.1.10",
     "@types/axios": "^0.14.0",
     "@types/react": "^18.2.73",
     "@types/react-router-dom": "^5.3.3",
@@ -60,6 +71,6 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
     "sass": "^1.72.0",
-    "storybook": "^8.0.5"
+    "storybook": "^8.1.10"
   }
 }

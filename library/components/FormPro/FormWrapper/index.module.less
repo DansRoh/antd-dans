@@ -1,0 +1,30 @@
+.required::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+.label {
+  &[data-size=large] {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.top {
+  color: red;
+  :global {
+    .ant-form-item-row {
+      flex-direction: column;
+    }
+    .ant-form-item-label {
+      text-align: left;
+    }
+    .ant-form-item-control {
+      flex: auto;
+    }
+  }
+}
